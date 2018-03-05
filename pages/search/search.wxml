@@ -13,10 +13,10 @@
 <view>
   <!-- iamge标签可以加载本地图片，但背景图片用网络图片或者base64的才能在手机端显示。 -->
   <view class='topView'>
- 
+
     <view class='location' bindtap='chooseLocation'>
       <view>
-        <image class='locationImg'  mode='aspectFit'></image>
+        <image class='locationImg' mode='aspectFit'></image>
         <text>{{location}}</text>
       </view>
     </view>
@@ -24,4 +24,7 @@
     <view class='nowWind'>{{nowWind}}</view>
     <view class='air_now'>{{nowAir}}</view>
   </view>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/upload/upload" hover-class="navigator-hover">跳转到上传文件页面</navigator>
 </view>
